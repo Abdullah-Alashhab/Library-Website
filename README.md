@@ -1,2 +1,2 @@
-# Libraray-Website
+# Library-Website
 Simple Library Website
