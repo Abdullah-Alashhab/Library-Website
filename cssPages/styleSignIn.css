@@ -1,0 +1,86 @@
+.sign-in {
+    opacity: 0;
+    position: fixed;
+    top:-100%;
+    left:30%;
+    width: 40%;
+    height: 60%;
+    background-image: url("../images/signIn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    transition-property: all;
+    transition-duration: 1.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.sign-in.show {
+    opacity: 1;
+    top: 17%;
+}
+
+.frame-sign-in {
+    border-radius: 10px;
+    margin-left: 9%;
+    margin-top: 6%;
+    height: 80%;
+    width: 80%;
+    border: 5px solid white;
+}
+
+.form-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-sign-in,.password-sign-in, .button-sign-in {
+    width: 60%;
+    height: 50px;
+    display: block;
+    border-radius: 5px;
+    border:0;
+    background-color: white;
+    font-family: Bahnschrift, serif;
+    margin-bottom: 2%;
+}
+
+.button-sign-in {
+    font-size: 20px;
+    font-family: Lucida Sans, sans-serif;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.sign-in-head {
+    font-family: Broadway, serif;
+    letter-spacing: 5px;
+    color: linen;
+    font-size: 50px;
+    text-align: center;
+    margin: 4%;
+}
+
+.close-sign-in {
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius:15px;
+    top:4%;
+    right: 3%;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+

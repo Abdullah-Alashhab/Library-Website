@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mainPage</title>
+    <link rel="stylesheet" type="text/css" href="../cssPages/styleMainPage.css">
+    <link rel="stylesheet" type="text/css" href="../cssPages/styleSignIn.css">
+    <link rel="stylesheet" type="text/css" href="../cssPages/styleSignUp.css">
+</head>
+<body class="body">
+    <div class="sticky">
+        <div class="navigation">
+            <h1 class="indent head">MIDNIGHT</h1><h1 class="marginLeft head">LIBRARY</h1>
+            <button class="nav" onclick="showSignIn()">SIGN IN</button>
+            <button class="nav" onclick="showSignUp()">SIGN UP</button>
+            <a href="mailto:midnightlibrary@gmail.com" class="contacts">CONTACTS</a>
+            <form method="post" action="">
+            <input type="search" placeholder="Search" class="search">
+            </form>
+        </div>
+    </div>
+    <p class="middleParagraph">Midnight Library , Book for every night</p>
+    <center><div class="line"></div></center>
+   <center><div class="our-books">OUR BOOKS</div></center>
+    <div class="book-container">
+        <div class="book book1"></div>
+        <div class="book book2"></div>
+        <div class="book book3"></div>
+        <div class="book book4"></div>
+        <div class="book book5"></div>
+        <div class="link">
+           <a href="https://facebook.com/midnightlibrary" target="_blank" class="order">Order Now!</a>
+        </div>
+    </div>
+    <!--Sign in-->
+    <div class="sign-in" id="sign-in">
+        <button type="button" class="close-sign-in" onclick="removeSignIn()">X</button>
+        <div class="frame-sign-in">
+            <h1 class="sign-in-head">Sign In</h1>
+            <form method="post" action="" class="form-sign-in">
+                <input type="text" placeholder="Enter your name" class="name-sign-in">
+                <input type="password" placeholder="Enter your password" class="password-sign-in">
+                <input type="submit" class="button-sign-in" value="LOGIN">
+            </form>
+        </div>
+    </div>
+    <!--Sign Up-->
+        <div class="sign-up" id="sign-up">
+            <button type="button" class="close-sign-up" onclick="removeSignUp()">X</button>
+            <div class="frame-sign-up">
+                <h1 class="sign-up-head">Sign Up</h1>
+                <form method="post" action="" class="form-sign-up">
+                    <input type="text" placeholder="Enter name" class="name-sign-up">
+                    <input type="email" placeholder="Enter email" class="email-sign-up">
+                    <input type="password" placeholder="Enter password" class="password-sign-up">
+                    <input type="password" placeholder="Confirm password" class="confirm-password-sign-up">
+                    <input type="submit" value="Sign Up" class="button-sign-up">
+                </form>
+            </div>
+        </div>
+
+
+    <script>
+        function showSignIn(){
+            document.getElementById("sign-in").classList.add("show");
+            document.getElementById("sign-up").classList.remove("show");
+        }
+
+        function removeSignIn(){
+            document.getElementById("sign-in").classList.remove("show");
+        }
+
+        function showSignUp(){
+            document.getElementById("sign-up").classList.add("show");
+            document.getElementById("sign-in").classList.remove("show");
+        }
+
+        function removeSignUp(){
+            document.getElementById("sign-up").classList.remove("show");
+
+        }
+
+    </script>
+
+    <footer>Location : Zliten libya \ Number : 0910000000 </footer>
+</body>
+</html>
